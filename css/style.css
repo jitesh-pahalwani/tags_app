@@ -1,0 +1,36 @@
+#tagInput{
+    height:25px;
+    width:300px;
+    border: none;
+    padding-left: 10px;
+}
+#tagInput:focus{
+    outline: none
+}
+#parentDiv{
+    border: 1px solid black;
+    padding: 5px
+}
+.outerSpan{
+    background-color: #98FB98;
+    color: #006400;
+    border: 1px solid #2E8B57;
+    padding: 4px;
+    font-family: cursive;
+    border-radius: 4px;
+    margin-left: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+    height: 30px;
+    line-height: 30px;
+}
+#rightDivForInputs{
+    display: inline-block;
+}
+#leftDivForTags{
+    display: inline-block;
+}
+.innerSpanWithCross{
+    padding: 5px 2px 5px 10px;
+    cursor: pointer
+}
