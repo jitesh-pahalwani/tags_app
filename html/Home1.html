@@ -1,11 +1,8 @@
 <div>Input tag<br>
-<div id="parentDiv">
-<div id="leftDivForTags">
-	<span ng-repeat="x in tagsArray" class="outerSpan">{{x}}<span ng-click="removeTag($event)" class="innerSpanWithCross">x</span></span>
-	<input id="tagInput" ng-model="newTagInput" ng-keyup="addNewTag($event)" type="text" style="height:25px;width:300px" placeholder="add a tag"/>
-</div>
-<div id="rightDivForInputs">	
-
-</div>
-</div>
+	<div id="parentDiv">
+		<div id="leftDivForTags">
+			<span ng-repeat="x in tagsArray" class="outerSpan">{{x}}<span ng-click="removeTag($event)" class="innerSpanWithCross">x</span></span>
+			<input id="tagInput" ng-model="newTagInput" ng-keyup="addNewTag($event)" type="text" style="height:25px;width:300px" placeholder="add a tag"/>
+		</div>
+	</div>
 </div>
