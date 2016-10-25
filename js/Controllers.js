@@ -1,9 +1,6 @@
 var tagsApp = angular.module('tagsApp', ['ngRoute']);
 
 tagsApp.controller('tagsAppCtrl', function($scope, $location) {
-    $scope.myClick = function() {
-        alert("angular is working");
-    }
 
     $scope.tagsArray = ["foo", "bar"];
     $scope.removeTag = function(event) {
