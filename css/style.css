@@ -1,6 +1,6 @@
 #tagInput{
     height:25px;
-    width:300px;
+    width:500px !important;
     border: none;
     padding-left: 10px;
 }
@@ -30,4 +30,14 @@
 .innerSpanWithCross{
     padding: 5px 2px 5px 10px;
     cursor: pointer
+}
+.errorMsgDiv{
+    background-color: #FF6347;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 290px;
+    margin: auto;
+    margin-top: 5px;
+    font-weight: bold;
 }

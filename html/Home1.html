@@ -1,8 +1,9 @@
 <div>Input tag<br>
 	<div id="parentDiv">
 		<div id="leftDivForTags">
-			<span ng-repeat="x in tagsArray" class="outerSpan">{{x}}<span ng-click="removeTag($event)" class="innerSpanWithCross">x</span></span>
-			<input id="tagInput" ng-model="newTagInput" ng-keyup="addNewTag($event)" type="text" style="height:25px;width:300px" placeholder="add a tag"/>
+			<span ng-repeat="x in tagsArray track by $index" class="outerSpan">{{x}}<span ng-click="removeTag($event)" class="innerSpanWithCross">x</span></span>
+			<input id="tagInput" ng-model="newTagInput" ng-keyup="addNewTag($event)" type="text" style="height:25px;width:300px" placeholder="Click here to add a tag"/>
 		</div>
 	</div>
+	<div class="errorMsgDiv" ng-show="errorVar">Tag already exists. Try entering a new tag.</div>
 </div>
